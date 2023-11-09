@@ -1,0 +1,29 @@
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Logs
+logs
+*.log
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# node modules
+node_modules
+env/**/package-lock.json
+.build
+.svn
+released
+tmp
+public/static
+outputs/
+upload/
+fonts/
+env/renderer-env.tar.gz
+requirements
+license

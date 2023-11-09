@@ -1,0 +1,114 @@
+{
+    "enableNaming": false,
+    "requestLog": false,
+    "tmpDir": "./tmp",
+    "logDir": "./logs",
+    "logWriteInterval": 500,
+    "logFileExpires": 2626560000,
+    "outputDir": "./outputs",
+    "outputFileExpires": 604800000,
+    "publicDir": "./public",
+    "uploadFileExpires": 604800000,
+    "systemTmpFileExpires": 604800000,
+    "taskTmpFileExpires": 86400000,
+    "chunkCacheAlgorithm": "crc32",
+    "chunkCacheExpires": 604800000,
+    "voiceCacheAlgorithm": "crc32",
+    "voiceCacheExpires": 604800000,
+    "vtuberCacheAlgorithm": "crc32",
+    "vtuberCacheExpires": 604800000,
+    "restartKey": "",
+    "backupKey": "",
+    "recoverKey": "",
+    "restartDelay": 5000,
+    "autoRestartCronPatterns": "0 0 3 */1 * *",
+    "promClient": {
+        "enable": true,
+        "url": ""
+    },
+    "console": {
+        "urlPrefix": "/"
+    },
+    "taskPool": {
+        "enableDataShare": false,
+        "tasksLimit": 1000,
+        "dispatchInterval": 500,
+        "syncInterval": 200,
+        "tasksInitParallelLimit": 10,
+        "tasksWorkParallelLimit": 10,
+        "tasksQueueLimit": 100,
+        "taskPreprocessMode": "fast",
+        "taskProcessesLimit": 5,
+        "taskRetryLimit": 3,
+        "taskStartupTimeout": 30000,
+        "taskWorkTimeout": 7200000,
+        "taskExpires": 604800000,
+        "taskIdleTimeout": 600000,
+        "taskBlockRenderingTimeout": 60000,
+        "taskRenderDurationLimit": 3600000
+    },
+    "caller": {
+        "concurrenceRequestLimit": 10,
+        "concurrenceRequestTimeout": 60000,
+        "dispatchInterval": 500,
+        "callbackExpires": 604800000,
+        "callbackTimeout": 120000,
+        "callbackRetryLimit": 10,
+        "callbackRetryDelay": 5000,
+        "callbackValidate": "lucky"
+    },
+    "requester": {
+        "timeout": 60000,
+        "downloadTimeout": 300000
+    },
+    "requestBody": {
+        "enableTypes": [
+            "json",
+            "form",
+            "text",
+            "xml"
+        ],
+        "encoding": "utf-8",
+        "formLimit": "100mb",
+        "jsonLimit": "100mb",
+        "textLimit": "100mb",
+        "xmlLimit": "100mb",
+        "formidable": {
+            "maxFileSize": "1gb"
+        },
+        "multipart": true,
+        "parsedMethods": [
+            "POST",
+            "PUT",
+            "PATCH"
+        ]
+    },
+    "reporter": {
+        "enable": true,
+        "email": {
+            "enable": false,
+            "from": "",
+            "to": [],
+            "host": "",
+            "port": 465,
+            "secure": true,
+            "auth": {
+                "user": "",
+                "pass": ""
+            },
+            "pool": false
+        }
+    },
+    "checker": {
+        "enable": false,
+        "scanCronPatterns": "0 0 2 */1 * *"
+    },
+    "cleaner": {
+        "scanCronPatterns": "0 5 2 */1 * *"
+    },
+    "database": {
+        "dataFile": "./tmp/database.db",
+        "debug": false
+    },
+    "debug": true
+}

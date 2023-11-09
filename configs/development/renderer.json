@@ -1,0 +1,54 @@
+{
+    "fps": 60,
+    "videoCodec": "h264_nvenc",
+    "videoFormat": "mp4",
+    "videoQuality": 80,
+    "audioCodec": "aac",
+    "coverFormat": "jpg",
+    "frameFormat": "jpeg",
+    "frameQuality": 80,
+    "pixelFormat": "yuv420p",
+    "frameBuffersSize": 10,
+    "cores": {
+        "online": 5,
+        "offline": 5
+    },
+    "core": {
+        "processes": 5,
+        "executable": "chrome",
+        "startupTimeout": 30000,
+        "idleTimeout": 120000,
+        "liveTimeout": 900000,
+        "singleProcess": true,
+        "showPaintRects": false,
+        "headless": true,
+        "pipe": true,
+        "renderer": "angle",
+        "useGPU": true,
+        "gpuLog": false,
+        "debug": false
+    },
+    "process": {
+        "startupTimeout": 30000,
+        "renderStartTimeout": 30000,
+        "waitFrameTimeout": 30000,
+        "idleTimeout": 60000,
+        "liveTimeout": 3600000,
+        "frameRenderWarningTimeThreshold": 100,
+        "mediaRenderWarningTimeThreshold": 500,
+        "videoPreDecodeFrameCount": 10,
+        "vtuberCutoutColor": "#00fd00",
+        "vtuberCutoutThreshold": 345
+    },
+    "transitionMap": {
+        "wipeLeft": "wipeleft",
+        "wipeUp": "wipeup",
+        "wipeRight": "wiperight",
+        "wipeDown": "wipedown",
+        "fadecolor": "fadeblack",
+        "fadegrayscale": "fadegrays",
+        "rotate_scale_fade": "zoomin",
+        "zoomin": "fadeblack"
+    },
+    "debug": true
+}
